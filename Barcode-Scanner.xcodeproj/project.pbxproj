@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7A56D2942C8F559300A1E57B /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56D2932C8F559300A1E57B /* BarcodeScannerView.swift */; };
+		7A56D2982C8F605A00A1E57B /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56D2972C8F605A00A1E57B /* ScannerVC.swift */; };
+		7A56D29A2C8F686200A1E57B /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56D2992C8F686200A1E57B /* ScannerView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7A56D2772C8F557000A1E57B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +33,27 @@
 		7A56D2652C8F556E00A1E57B /* Barcode-Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barcode-Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A56D2762C8F557000A1E57B /* Barcode-ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Barcode-ScannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A56D2802C8F557000A1E57B /* Barcode-ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Barcode-ScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A56D2932C8F559300A1E57B /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		7A56D2972C8F605A00A1E57B /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		7A56D2992C8F686200A1E57B /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7A56D2962C8F57FE00A1E57B /* Exceptions for "Barcode-Scanner" folder in "Barcode-Scanner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7A56D2642C8F556E00A1E57B /* Barcode-Scanner */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7A56D2672C8F556E00A1E57B /* Barcode-Scanner */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7A56D2962C8F57FE00A1E57B /* Exceptions for "Barcode-Scanner" folder in "Barcode-Scanner" target */,
+			);
 			path = "Barcode-Scanner";
 			sourceTree = "<group>";
 		};
@@ -75,6 +97,9 @@
 		7A56D25C2C8F556E00A1E57B = {
 			isa = PBXGroup;
 			children = (
+				7A56D2992C8F686200A1E57B /* ScannerView.swift */,
+				7A56D2972C8F605A00A1E57B /* ScannerVC.swift */,
+				7A56D2932C8F559300A1E57B /* BarcodeScannerView.swift */,
 				7A56D2672C8F556E00A1E57B /* Barcode-Scanner */,
 				7A56D2792C8F557000A1E57B /* Barcode-ScannerTests */,
 				7A56D2832C8F557000A1E57B /* Barcode-ScannerUITests */,
@@ -236,6 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A56D2982C8F605A00A1E57B /* ScannerVC.swift in Sources */,
+				7A56D29A2C8F686200A1E57B /* ScannerView.swift in Sources */,
+				7A56D2942C8F559300A1E57B /* BarcodeScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +424,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Barcode-Scanner/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to Use Camera to Scan Barcode";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -435,6 +465,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Barcode-Scanner/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to Use Camera to Scan Barcode";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
